@@ -36,6 +36,7 @@ import org.springframework.retry.RetryContext;
  * @author Rob Harrop
  * @author Dave Syer
  */
+//补偿策略
 public interface BackOffPolicy {
 
 	/**
@@ -46,6 +47,8 @@ public interface BackOffPolicy {
 	 * that we can use to decide how to proceed.
 	 * @return the implementation-specific {@link BackOffContext} or '<code>null</code>'.
 	 */
+    
+    //启动补偿调用，当调用时，可以有暂停的情况，但一般情况下它应该都是立即返回的
 	BackOffContext start(RetryContext context);
 
 	/**
@@ -56,6 +59,7 @@ public interface BackOffPolicy {
 	 * @throws BackOffInterruptedException if the attempt at back off is
 	 * interrupted.
 	 */
+	//对于有中断需求来说，可以通过实现该方法来暂停start方法的执行
 	void backOff(BackOffContext backOffContext) throws BackOffInterruptedException;
 
 }

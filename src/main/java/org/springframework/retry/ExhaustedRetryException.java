@@ -16,6 +16,9 @@
 
 package org.springframework.retry;
 
+
+
+//重试最后一次仍不成功的异常
 @SuppressWarnings("serial")
 public class ExhaustedRetryException extends RetryException {
 

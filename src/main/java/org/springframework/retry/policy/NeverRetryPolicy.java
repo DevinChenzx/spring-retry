@@ -28,6 +28,7 @@ import org.springframework.retry.context.RetryContextSupport;
  * @author Dave Syer
  * 
  */
+//只允许重发第一次，就不在重试
 public class NeverRetryPolicy implements RetryPolicy {
 
 	/**

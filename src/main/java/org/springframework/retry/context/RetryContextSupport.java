@@ -43,18 +43,28 @@ public class RetryContextSupport extends AttributeAccessorSupport implements Ret
 		return this.parent;
 	}
 
+	
+	
+	//是否为最后一次重发
 	public boolean isExhaustedOnly() {
 		return terminate;
 	}
-
+	
+	
+	//设置为最后一次重发
 	public void setExhaustedOnly() {
 		terminate = true;
 	}
 
+	
+	//重发次数
 	public int getRetryCount() {
 		return count;
 	}
 
+	
+	
+	//得到最后一次重发发生的异常
 	public Throwable getLastThrowable() {
 		return lastException;
 	}
@@ -73,6 +83,8 @@ public class RetryContextSupport extends AttributeAccessorSupport implements Ret
 	 * @param throwable the exception that caused the current retry attempt to
 	 * fail.
 	 */
+	
+	//将重发最后一次异常注册
 	public void registerThrowable(Throwable throwable) {
 		this.lastException = throwable;
 		if (throwable != null)

@@ -20,6 +20,9 @@ package org.springframework.retry.backoff;
  * @author Rob Harrop
  * @since 2.1
  */
+
+
+//补偿接口
 public interface BackOffContext {
 
 }

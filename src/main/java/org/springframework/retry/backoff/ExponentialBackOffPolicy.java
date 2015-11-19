@@ -40,6 +40,7 @@ import org.springframework.util.ClassUtils;
  * @author Gary Russell
  * @author Artem Bilan
  */
+//实现在给定的设置中，每一次重试尝试的时间都会增加，是线程安全的，适合于并发访问。
 public class ExponentialBackOffPolicy implements SleepingBackOffPolicy<ExponentialBackOffPolicy> {
 
 	protected final Log logger = LogFactory.getLog(this.getClass());
@@ -171,6 +172,7 @@ public class ExponentialBackOffPolicy implements SleepingBackOffPolicy<Exponenti
 	 * Pause for a length of time equal to '
 	 * <code>exp(backOffContext.expSeed)</code>'.
 	 */
+	//backOff调用一次就中断久一点
 	public void backOff(BackOffContext backOffContext) throws BackOffInterruptedException {
 		ExponentialBackOffContext context = (ExponentialBackOffContext) backOffContext;
 		try {

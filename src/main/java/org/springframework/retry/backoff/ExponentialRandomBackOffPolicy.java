@@ -42,6 +42,7 @@ import java.util.Random;
  * @author Jon Travis
  * @author Dave Syer
  */
+//随机产生中断
 public class ExponentialRandomBackOffPolicy extends ExponentialBackOffPolicy {
     /**
      * Returns a new instance of {@link org.springframework.retry.backoff.BackOffContext}, seeded with this

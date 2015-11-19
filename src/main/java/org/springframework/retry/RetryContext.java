@@ -55,6 +55,7 @@ public interface RetryContext extends AttributeAccessor {
 	 * 
 	 * @return the number of retries.
 	 */
+	 //得到重试次数
 	int getRetryCount();
 
 	/**

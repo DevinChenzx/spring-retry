@@ -22,6 +22,9 @@ package org.springframework.retry.interceptor;
  * 
  * @author Dave Syer
  */
+
+
+//补偿接口
 public interface MethodInvocationRecoverer<T> {
 
 	/**

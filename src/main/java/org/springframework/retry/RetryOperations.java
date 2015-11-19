@@ -25,6 +25,8 @@ import org.springframework.retry.support.DefaultRetryState;
  * @author Rob Harrop
  * @author Dave Syer
  */
+
+//重发行为操作集合
 public interface RetryOperations {
 
 	/**

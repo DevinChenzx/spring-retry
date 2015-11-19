@@ -16,6 +16,8 @@
 
 package org.springframework.retry;
 
+
+//终止重发异常
 @SuppressWarnings("serial")
 public class TerminatedRetryException extends RetryException {
 

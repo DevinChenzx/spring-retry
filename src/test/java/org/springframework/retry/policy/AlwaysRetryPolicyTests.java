@@ -25,6 +25,16 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import org.springframework.retry.RetryContext;
 
+
+/**
+ * 一直重试策略
+ * Title: AlwaysRetryPolicyTests<br/>
+ * Description: <br/>
+ * Company: gigold<br/>
+ * @author Devin
+ * @date 2015年10月31日下午2:26:46
+ *
+ */
 public class AlwaysRetryPolicyTests {
 
 	@Test

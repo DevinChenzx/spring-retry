@@ -22,6 +22,7 @@ package org.springframework.retry;
  * 
  * @since 1.1
  */
+//当所有的重试都执行完毕时，仍没有成功的回调
 public interface RecoveryCallback<T> {
 
 	/**

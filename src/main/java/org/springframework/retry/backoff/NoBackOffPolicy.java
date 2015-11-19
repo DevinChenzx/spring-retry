@@ -25,7 +25,9 @@ package org.springframework.retry.backoff;
  * @since 2.1
  */
 public class NoBackOffPolicy extends StatelessBackOffPolicy {
-
+    
+    
+    //没有中断，直接执行
 	protected void doBackOff() throws BackOffInterruptedException {
 	}
 }

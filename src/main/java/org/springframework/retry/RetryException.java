@@ -18,6 +18,8 @@ package org.springframework.retry;
 
 import org.springframework.core.NestedRuntimeException;
 
+
+//重发时发生的异常
 @SuppressWarnings("serial")
 public class RetryException extends NestedRuntimeException {
 

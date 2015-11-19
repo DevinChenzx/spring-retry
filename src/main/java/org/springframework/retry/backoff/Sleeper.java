@@ -21,6 +21,7 @@ package org.springframework.retry.backoff;
  * @author Dave Syer
  * 
  */
+//中断
 public interface Sleeper {
 
 	/**

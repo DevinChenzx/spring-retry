@@ -27,6 +27,15 @@ package org.springframework.retry;
  * @author Dave Syer
  * 
  */
+/**
+ * 重试策略
+ * Title: RetryPolicy<br/>
+ * Description: <br/>
+ * Company: gigold<br/>
+ * @author Devin
+ * @date 2015年10月31日下午2:35:52
+ *
+ */
 public interface RetryPolicy {
 
 	/**
